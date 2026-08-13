@@ -5,7 +5,8 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "deploy": "npm run docs:build && cd .vitepress && cd dist && git add -A && git commit -m \"Deploy dist\" && git push --set-upstream origin restrictedinventory"
   },
   "devDependencies": {
     "vitepress": "next",

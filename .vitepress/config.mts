@@ -34,6 +34,7 @@ export default defineConfig({
         items: [
           { text: 'Configuration', link: '/reference/configuration' },
           { text: 'Variant filters', link: '/reference/component-filters' },
+          { text: 'Groups & displays', link: '/reference/groups' },
           { text: 'Commands & permissions', link: '/reference/commands' },
           { text: 'Compatibility', link: '/reference/compatibility' }
         ]

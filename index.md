@@ -23,4 +23,7 @@ features:
   - icon: '{}'
     title: Variant-aware
     details: Pin a slot to exact variants such as an enchanted book, potion, or tipped arrow.
+  - icon: '[]'
+    title: Groups and displays
+    details: Accept any of several variant-specific entries at once, and choose the icon a slot draws.
 ---

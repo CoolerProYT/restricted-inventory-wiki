@@ -61,3 +61,5 @@ The configured filter is checked in addition to the item or tag. A stack with th
 :::
 
 To remove variant matching while retaining the item/tag rule, middle-click the slot and clear the NBT or component object.
+
+The same variant data can also be attached to a rule's `display`, where it selects the icon the slot draws instead of narrowing what the slot accepts. See [groups and displays](/reference/groups).

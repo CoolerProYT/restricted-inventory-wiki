@@ -6,13 +6,17 @@ RestrictedInventory checks rules at the points where Minecraft normally validate
 
 When a player tries to place a stack into a restricted slot, the item must match the configured item or tag. If the rule contains a component or NBT filter, that variant data must match as well.
 
+A rule pointing at a [restriction group](/reference/groups) matches when any single entry in that group does.
+
 ## Pickups and automatic routing
 
 Picked-up items try their eligible restricted slots first. If no matching restricted slot has room, Minecraft falls back to unrestricted inventory slots. A restriction therefore reserves a destination without preventing the player from collecting that item elsewhere when the reserved slot is full.
 
 ## Visual feedback
 
-Empty restricted slots render a dimmed ghost preview. Tag rules cycle through tag members so the player can see examples of valid items. Hold **Tab** to display inventory indices when `showSlotIndex` is enabled.
+Empty restricted slots render a dimmed ghost preview. Tag rules and group rules cycle through their members so the player can see examples of valid items. Hold **Tab** to display inventory indices when `showSlotIndex` is enabled.
+
+A rule can pin that preview to one exact stack with `display`. Rendering is decided separately from matching, so a `display` never widens or narrows what the slot accepts. See [groups and displays](/reference/groups).
 
 ## Rule priority
 

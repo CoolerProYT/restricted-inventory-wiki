@@ -31,6 +31,10 @@ The middle panel mirrors the player's 36 inventory slots.
 
 Select **Save** to write and activate the rules. **Cancel** closes the editor without applying the working changes.
 
+::: tip Group rules survive the editor
+The picker offers items and tags only. A slot already restricted to a [group](/reference/groups) keeps that rule through an editor session — it previews and saves normally, it just has no single NBT filter to middle-click. Applying an item or tag to that slot replaces the group rule, as it would any other.
+:::
+
 ## Reading the preview
 
 A filled slot in the editor cycles through valid items when its rule targets a tag. In a normal inventory, a restricted slot displays a gray ghost item so players can recognize the expected content without opening the editor.
